@@ -16,15 +16,15 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "DemoCustomSDK"
-  spec.version      = "0.0.1"
-  spec.summary      = "A short description of PKSDKDemo"
+  spec.version      = "0.0.2"
+  spec.summary      = "A short description of DemoCustomSDK"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "A short description of PKSDK.podspec."
+  spec.description  = "A short description of DemoCustomSDK.podspec."
 
   spec.homepage     = "https://github.com/PritKothadiya/demo-sdk-zip"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -66,7 +66,7 @@ Pod::Spec.new do |spec|
    spec.platform     = :ios, "13.0"
 
   #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
+  spec.ios.deployment_target = "13.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :http => "https://github.com/PritKothadiya/demo-sdk-zip/releases/download/0.0.1/PKSDK.zip" }
+  spec.source       = { :http => "https://github.com/PritKothadiya/demo-sdk-zip/releases/download/0.0.2/PKSDK.zip" }
 
   spec.vendored_frameworks = "PKSDK.xcframework"
 
@@ -89,6 +89,8 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
+
+ spec.swift_versions = "5.0"
 
 #  spec.source_files  = "PKSDK/**/*.{swift}"
   #spec.exclude_files = "Classes/Exclude"
